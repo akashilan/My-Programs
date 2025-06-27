@@ -1,4 +1,5 @@
 def two_sum(arr, target):
+	'''Given a list and target, this function finds the positions of two elements such that the addition of which equals the target without using inbuilt methods.'''
 	mapp = {}
 	for i in range(len(arr)):
 		if target - arr[i] in mapp:
