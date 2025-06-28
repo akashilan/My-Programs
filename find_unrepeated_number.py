@@ -2,7 +2,8 @@ def is_arr_length_3_4n_type(start, end):
 	return True if ((end-start+1) - 3) % 4 == 0 else False
 
 def find_unique(arr:list)->int:
-	'''list contains sorted integers where every number is repeated twice except one. this function returns that unique number in log(n) time.'''
+	'''list contains sorted integers where every number is repeated twice except one. 
+        this function returns that unique number in log(n) time.'''
 	i=0
 	end = len(arr)-1
 	count = 0
@@ -33,6 +34,17 @@ def find_unique(arr:list)->int:
 arr = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9]
 print(find_unique(arr))
 
+
+
+
+
+
+
+
+
+
+
+'''-----------------x----------------------'''
 '''The while loop below generates array'''
 '''
 unique=1
