@@ -25,7 +25,7 @@ def find_unique(arr:list)->int:
 			else:
 				i = mid+1
 		else:
-			print("5+4n type")
+			
 			if arr[mid] == arr[mid+1]:
 				i = mid + 2
 			else:
