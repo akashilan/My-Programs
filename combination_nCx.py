@@ -1,6 +1,6 @@
 def ith_row(string, n, x, ith_row_chars, ith_row_indices):
     if len(ith_row_chars) == x:
-        print(str(ith_row_chars))
+        print(", ".join(ith_row_chars))
     else:
         for i in range(n):
             if i  > ith_row_indices[-1]:
@@ -16,12 +16,14 @@ def nCx(string, x):
     str_len = len(string)
     
     if x<1 or x>str_len:
-        return 'X value out of range!'
+        print(f'x value should be 1 to {str_len} inclusive!')
+        return
     
     if str_len == 0:
-        return f'No characters to Select at {x} places!'
+        print(f'No characters to Select at {x} places!')
+        return
     
     for i in range(str_len):
         ith_row(string, str_len, x, [string[i]], [i])
     
-nCx('abcd', 2)
+nCx('1234', 2)
