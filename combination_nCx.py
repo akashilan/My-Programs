@@ -12,7 +12,7 @@ def ith_row(string, n, x, ith_row_chars, ith_row_indices):
 
 
 def nCx(string, x):
-    '''Selects the characters in the string variable at "x" positions(., combination)'''
+    '''Selects the characters in the string variable at "x" positions(i.e., combination)'''
     str_len = len(string)
     
     if x<1 or x>str_len:
