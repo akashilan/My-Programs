@@ -12,14 +12,14 @@ def ith_row(string, n, x, ith_row_chars, ith_row_indices):
 
 
 def nCx(string, x):
-    '''Permutes the characters in the string variable at "x" positions'''
+    '''Selects the characters in the string variable at "x" positions(., combination)'''
     str_len = len(string)
     
     if x<1 or x>str_len:
         return 'X value out of range!'
     
     if str_len == 0:
-        return 'No characters to permute!'
+        return f'No characters to Select at {x} places!'
     
     for i in range(str_len):
         ith_row(string, str_len, x, [string[i]], [i])
