@@ -11,10 +11,9 @@ def find(cities, visited, source, destination):
 def is_reachable(cities, source, destination):
 	if source not in cities or destination not in cities:
 		return False
-	if source in cities:
-		visited = [source]
 	if source == destination:
 		return True
+	visited = [source]
 	return find(cities, visited, source, destination)
 
 cities = {'a': ['b', 'c', 'd'], 'b':['a'], 'c':['a', 'f'], 'd': ['a'], 'f': ['c', 'e'], 'e': ['f']}
